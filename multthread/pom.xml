@@ -12,6 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <akka.version>2.4.9</akka.version>
   </properties>
 
   <dependencies>
@@ -21,5 +22,31 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+        <groupId>com.typesafe.akka</groupId>
+        <artifactId>akka-actor_2.11</artifactId>
+        <version>${akka.version}</version>
+    </dependency>
+     <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-http-core_2.11</artifactId>
+            <version>${akka.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-http-experimental_2.11</artifactId>
+            <version>${akka.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-http-jackson-experimental_2.11</artifactId>
+            <version>${akka.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-testkit_2.11</artifactId>
+            <version>${akka.version}</version>
+            <scope>test</scope>
+        </dependency>
   </dependencies>
 </project>
